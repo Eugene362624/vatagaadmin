@@ -1,0 +1,65 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content-wrapper {
+  background: $grayColor;
+  max-height: calc(100vh - 80px);
+  height: 100%;
+  overflow-y: auto;
+}
+
+.card-wrapper {
+  margin-left: -24px;
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  padding: 24px;
+  background: $whiteColor;
+  border-radius: 20px;
+  margin: 24px 0 0 24px;
+}
+
+button.MuiButton-root {
+  text-transform: none;
+  color: #1f1f1f;
+  border-color: $grayColor !important;
+}
+
+li.MuiBreadcrumbs-li {
+  a {
+    text-decoration: none;
+    color: $blueColor;
+    border-bottom: 1px solid transparent;
+    transition: border .2s ease;
+    &:hover {
+      border-bottom: 1px solid $blueColor;
+    }
+  }
+}
+
+.line {
+  border-bottom: 1px solid #d9dbdd;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.content {
+  padding: 40px;
+  height: fit-content;
+  min-height: calc(100vh - 160px);
+}

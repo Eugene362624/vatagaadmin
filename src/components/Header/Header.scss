@@ -1,0 +1,41 @@
+@import '../../variables';
+
+header {
+    height: 80px;
+    background: $grayColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #e8e8e8;
+    .header-middle {
+        .header-search {
+            display: flex;
+            background: $whiteColor;
+            border-radius: 10px;
+            padding: 1px;
+            input {
+                background: transparent;
+                padding: 10px;
+                border: none;
+                border-radius: 10px;
+            }
+            button {
+                height: 36px;
+                width: 36px;
+                min-width: unset;
+                border-radius: 10px;
+            }
+        }
+    }
+    .header-right {
+        display: flex;
+        align-items: center;
+        button {
+            margin-left: 10px;
+            &:last-child {
+                margin-left: 20px;
+            }
+        }
+    }
+}
